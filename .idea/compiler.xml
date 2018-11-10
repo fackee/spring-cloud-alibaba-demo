@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dubbo" />
+        <module name="nacos-config" />
+        <module name="nacos-discovery" />
+        <module name="rocketmq" />
+        <module name="sentinel" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dubbo" target="1.5" />
+      <module name="nacos-config" target="1.5" />
+      <module name="nacos-discovery" target="1.5" />
+      <module name="rocketmq" target="1.5" />
+      <module name="sentinel" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

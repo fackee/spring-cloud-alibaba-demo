@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.spring.cloud:spring-cloud-starter-alibaba-nacos-discvery:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/spring/cloud/spring-cloud-starter-alibaba-nacos-discvery/unknown/spring-cloud-starter-alibaba-nacos-discvery-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/spring/cloud/spring-cloud-starter-alibaba-nacos-discvery/unknown/spring-cloud-starter-alibaba-nacos-discvery-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/spring/cloud/spring-cloud-starter-alibaba-nacos-discvery/unknown/spring-cloud-starter-alibaba-nacos-discvery-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
