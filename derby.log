@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Nov 13 10:21:52 CST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.1 - (1458268): instance a816c00e-0167-0ae0-024c-0000625705e8 
+on database directory /Users/rocky/IdeaProjects/spring-cloud-alibaba-demo/nacos/data/derby-data with class loader org.springframework.boot.loader.LaunchedURLClassLoader@3a03464 
+Loaded from jar:file:/Users/rocky/IdeaProjects/spring-cloud-alibaba-demo/nacos/target/nacos-server.jar!/BOOT-INF/lib/derby-10.10.1.1.jar!/
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_151-b12
+user.dir=/Users/rocky/IdeaProjects/spring-cloud-alibaba-demo
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.12.6
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

@@ -1,0 +1,1 @@
+{"key":"com.alibaba.nacos.naming.iplist.discovery-demo","timestamp":1542111108180,"value":"[{\"app\":\"DEFAULT\",\"clusterName\":\"DEFAULT\",\"enabled\":true,\"instanceId\":\"192.168.16.87#8080#DEFAULT#discovery-demo\",\"ip\":\"192.168.16.87\",\"lastBeat\":1542111108178,\"marked\":false,\"metadata\":{},\"port\":8080,\"tenant\":\"\",\"valid\":true,\"weight\":1}]"}

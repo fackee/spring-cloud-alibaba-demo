@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: discovery-demo
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  path: ./logs
