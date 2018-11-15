@@ -22,9 +22,9 @@ public class Application {
 //
     @RestController
     public class TestController{
-        @RequestMapping(value = "/test/{value}")
+        @RequestMapping(value = "/hello/{value}")
         public String test(@PathVariable String value){
-            return value;
+            return "hello I'm " + value;
         }
     }
 }
