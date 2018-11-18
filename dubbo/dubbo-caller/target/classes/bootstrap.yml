@@ -1,0 +1,27 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: dubbo-caller
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+dubbo:
+  application:
+    id: dubbo-caller
+    name: dubbo-caller
+    version: 1.0.0
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 8888
+
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include: '*'

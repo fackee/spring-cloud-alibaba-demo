@@ -37,6 +37,7 @@ public class ConfigController {
 
     @RequestMapping(value = "/config/get")
     public String config(){
+        System.out.println("service-url|"+serviceUrl);
         return restTemplate.getForObject(serviceUrl,String.class);
     }
 
@@ -44,7 +45,7 @@ public class ConfigController {
     @RequestMapping(value = "/config/update")
     public String updateCOnfig(String configKey,String configValue){
         try {
-            nacosConfigService.publishConfig(applicaionName+".yaml","DEFAULT_GROUP",configKey + "=" + configValue);
+            nacosConfigService.publishConfig(applicaionName+".properties","DEFAULT_GROUP",configKey + "=" + configValue);
         } catch (NacosException e) {
             e.printStackTrace();
         }

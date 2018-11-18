@@ -6,7 +6,25 @@
 
     <groupId>com.springcloudalibaba.example</groupId>
     <artifactId>dubbo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <parent>
+        <groupId>com.springcloudalibaba.example</groupId>
+        <artifactId>all</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <modules>
+        <module>dubbo-provider</module>
+        <module>dubbo-caller</module>
+        <module>dubbo-api</module>
+    </modules>
 
+    <dependencies>
 
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+    </dependencies>
 </project>
