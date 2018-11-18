@@ -16,5 +16,3 @@ dubbo:
     id: zk-registry
     address: 127.0.0.1:2181
     protocol: zookeeper
-  scan:
-    base-packages: com.dubbo.provider.service
