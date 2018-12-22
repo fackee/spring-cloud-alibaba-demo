@@ -9,12 +9,7 @@ import org.springframework.stereotype.Service;
 public class LoginService {
 
 
-    @Reference(
-            version = "${dubbo.application.version}",
-            application = "${dubbo.application.id}",
-            url = "dubbo://127.0.0.1:12345",
-            timeout = 5000
-    )
+    @Reference(version = "${dubbo.application.version}", timeout = 5000)
     private SafeCheckService safeCheckService;
 
 

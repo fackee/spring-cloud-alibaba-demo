@@ -1,22 +1,20 @@
 package com.dubbo.provider;
 
 
-import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
 @SpringBootApplication
-@DubboComponentScan(basePackages = "com.dubbo.provider.service")
+@EnableDubbo(scanBasePackages = "com.dubbo.provider.service")
 public class DubboProviderApplication {
 
     /**
     *
     */
     public static void main(String[] args) {
-        new SpringApplicationBuilder()
-                .web(WebApplicationType.NONE)
-                .sources(DubboProviderApplication.class)
-                .run(args);
+        new SpringApplication(DubboProviderApplication.class).run(args);
     }
 }

@@ -15,10 +15,9 @@ dubbo:
     id: dubbo-caller
     name: dubbo-caller
     version: 1.0.0
-  protocol:
-    id: dubbo
-    name: dubbo
-    port: 8888
+  registry:
+    id: nacos-registry
+    address: nacos://127.0.0.1:8848
 
 management:
   endpoints:

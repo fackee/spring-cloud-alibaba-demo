@@ -5,12 +5,7 @@ import com.dubbo.api.service.SafeCheckService;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-@Service(
-        version = "${dubbo.application.version}",
-        application = "${dubbo.application.id}",
-        protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}"
-)
+@Service(version = "${dubbo.application.version}")
 public class SafeCheckServiceImpl implements SafeCheckService {
 
     @Override

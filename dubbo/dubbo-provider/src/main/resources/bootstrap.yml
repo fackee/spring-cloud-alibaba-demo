@@ -8,11 +8,9 @@ dubbo:
     name: dubbo-provider
     version: 1.0.0
   protocol:
-    id: dubbo
     name: dubbo
-    port: 12345
+    port: 8888
     status: server
   registry:
-    id: zk-registry
-    address: 127.0.0.1:2181
-    protocol: zookeeper
+    id: nacos-registry
+    address: nacos://127.0.0.1:8848
