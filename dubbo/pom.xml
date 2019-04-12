@@ -7,12 +7,11 @@
     <groupId>com.springcloudalibaba.example</groupId>
     <artifactId>dubbo</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <parent>
         <groupId>com.springcloudalibaba.example</groupId>
         <artifactId>all</artifactId>
         <version>1.0.0</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modules>
         <module>dubbo-provider</module>
@@ -23,10 +22,17 @@
     <dependencies>
 
         <!-- Dubbo Nacos registry dependency -->
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba</groupId>-->
+            <!--<artifactId>dubbo-registry-nacos</artifactId>-->
+            <!--<version>0.0.1</version>-->
+        <!--</dependency>-->
+
+        <!-- Dubbo Kubernetes registry dependency -->
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>dubbo-registry-nacos</artifactId>
-            <version>0.0.1</version>
+            <artifactId>dubbo-registry-k8s</artifactId>
+            <version>0.0.2</version>
         </dependency>
 
         <!-- Dubbo dependency -->

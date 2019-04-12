@@ -2,15 +2,36 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <!--<parent>-->
-        <!--<artifactId>dubbo</artifactId>-->
-        <!--<groupId>com.springcloudalibaba.example</groupId>-->
-        <!--<version>1.0-SNAPSHOT</version>-->
-    <!--</parent>-->
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.springcloudalibaba.example</groupId>
     <artifactId>dubbo-api</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
 
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <distributionManagement>
+        <repository>
+            <id>localRepository</id>
+            <url>file:/Users/rocky/apache-maven-3.5.2/repository</url>
+        </repository>
+    </distributionManagement>
 
 </project>

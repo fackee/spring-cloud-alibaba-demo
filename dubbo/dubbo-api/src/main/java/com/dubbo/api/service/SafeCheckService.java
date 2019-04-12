@@ -5,4 +5,6 @@ public interface SafeCheckService {
 
     public boolean isSafe(String userName);
 
+    public void test();
+
 }

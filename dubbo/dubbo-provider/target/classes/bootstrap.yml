@@ -2,15 +2,19 @@ spring:
   application:
     name: dubbo-provider
 
+server:
+  port: 9000
+
 dubbo:
   application:
-    id: dubbo-provider
-    name: dubbo-provider
+    id: dubbo-provider-id
+    name: dubbo-provider-app
     version: 1.0.0
   protocol:
     name: dubbo
     port: 8888
     status: server
   registry:
-    id: nacos-registry
-    address: nacos://127.0.0.1:8848
+    id: kubernetes-registry
+    address: kubernetes://127.0.0.1:8848
+    group: kube-ym-ad

@@ -14,4 +14,9 @@ public class SafeCheckServiceImpl implements SafeCheckService {
         System.out.println("======================================="+isSafe);
         return isSafe == 0 ? true : false;
     }
+
+    @Override
+    public void test() {
+        System.out.println("======test");
+    }
 }

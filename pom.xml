@@ -7,6 +7,7 @@
     <groupId>com.springcloudalibaba.example</groupId>
     <artifactId>all</artifactId>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
     <parent>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-alibaba</artifactId>

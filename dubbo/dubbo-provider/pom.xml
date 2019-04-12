@@ -8,11 +8,12 @@
     <groupId>com.springcloudalibaba.example</groupId>
     <artifactId>dubbo-provider</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
 
     <parent>
-    <groupId>com.springcloudalibaba.example</groupId>
-    <artifactId>dubbo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+        <groupId>com.springcloudalibaba.example</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>1.0.0</version>
     </parent>
     <dependencies>
         <dependency>
@@ -34,4 +35,34 @@
         </dependency>
     </dependencies>
 
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

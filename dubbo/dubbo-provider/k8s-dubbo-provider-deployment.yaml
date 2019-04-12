@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dubbo-provider-app
+  namespace: kube-ym-ad
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: dubbo-provider-app
+    spec:
+      serviceAccountName: spring-cloud-k8s-sa
+      containers:
+      - name: dubbo-provider-container
+        image: dubbo-provider:1.0.0
+      nodeSelector:
+        schedulable: "true"
